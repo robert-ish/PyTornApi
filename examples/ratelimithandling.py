@@ -6,5 +6,5 @@ def try_call(func, *args):
   try:
     func(*args)
   except pt.RateLimitError as e:
-    time.sleep(e.retry_after) # yes, you can do this
+    time.sleep(int(e.retry_after)+0.1) # yes, you can do this
     func(*args)
