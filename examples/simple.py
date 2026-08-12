@@ -2,5 +2,5 @@
 # i have no idea what bars does and why would i.
 import PyTornApi as pt
 import random
-randomuserbars = pt.get_user(random.randint(1,999999), 'bars')
+randomuserbars = pt.get_user(random.randint(1,999999), pt.UserField.BARS)
 print(randomuserbars)
