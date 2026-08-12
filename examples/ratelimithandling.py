@@ -1,5 +1,6 @@
 # handles rate limits but might be a bit inconvinient since you have to wait.
 import PyTornApi as pt
+import time
 
 def try_call(func, *args):
   try:
