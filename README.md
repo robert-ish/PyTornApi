@@ -6,9 +6,9 @@ pip install PyTornApi
 ```
 ## How to use
 ```python
-import PyTornApi
+import PyTornApi as pt
 api = TornAPI('YOUR_API_KEY')
-items = api.get_torn(0,'items')
+items = api.get_torn(0, pt.TornField.ITEMS)
 ```
 ## documentation
 im not making all this just figure it out yourself for now.
